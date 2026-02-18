@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manjil Mart — Pure Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" id="logo-link">
+        <img src="images/logo.jpeg" alt="Manjil logo" class="logo" />
+        <span class="brand-name">Manjil Mart</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#login" class="nav-link" id="nav-login">Login</a>
+        <button class="cart-button" id="cart-btn">
+          Cart <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+
+    <!-- HOME -->
+    <section id="home" class="page active">
+      <div class="hero">
+        <div class="hero-text">
+          <h1>Pure, Fresh & Authentic Spices</h1>
+          <p>Hand-sourced, sun-dried, and packed with love.</p>
+          <a href="#products" class="btn btn-primary">Shop Products</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/logo.jpeg" alt="Brand visual" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="page">
+      <div class="section-head">
+        <h2>Our Products</h2>
+        <p>High-quality spice powders curated for your kitchen.</p>
+      </div>
+
+      <div class="products-grid" id="products-grid"></div>
+    </section>
+
+    <!-- LOGIN -->
+    <section id="login" class="page">
+      <div class="form-card">
+        <h2>Login</h2>
+        <form id="login-form" autocomplete="off">
+          <label>Email</label>
+          <input type="email" required placeholder="you@example.com" />
+
+          <label>Password</label>
+          <input type="password" required minlength="6" placeholder="At least 6 characters" />
+
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CART MODAL -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-panel">
+      <h3>Your Cart</h3>
+      <div id="cart-items"></div>
+      <strong>Total: ₹<span id="cart-total">0.00</span></strong>
+      <button id="checkout" class="btn btn-primary">Checkout</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2025 Manjil Mart. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
